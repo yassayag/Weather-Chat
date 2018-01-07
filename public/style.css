@@ -1,0 +1,31 @@
+h1{
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.input-group{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.searchF {
+    background-color: #1C77BA;
+    color: white
+}
+
+.weatherT {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* font-family: 'Roboto', sans-serif; */
+
+}
+
+.border {
+    padding: 0.5%
+}
+
+.commentButton {
+    background-color: #00C15E;
+    color: white
+}
