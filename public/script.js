@@ -24,7 +24,12 @@ var fetch = function () {
 $('.searchF').on('click', fetch)
 
 
-var array = [{city: Marseille, temp: 18, hour:10, date:090706}]
+var array = [{
+    name: 'Marseille', 
+    temp: 18, 
+    tempF: 48,
+    hour:10, 
+    date:'01/01/2018'}]
 
 
 
