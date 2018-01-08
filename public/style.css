@@ -15,17 +15,22 @@ h1{
     color: white
 }
 
-.weatherT {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/* .weatherT {
     /* font-family: 'Roboto', sans-serif; */
-
-}
+/* 
+} */ 
 
 .border {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 0.5%
 }
 
 .commentButton {
     background-color: #00C15E;
     color: white
+}
+
+.fa-trash {
+    color:#FA4B69;
+    float:right
 }
