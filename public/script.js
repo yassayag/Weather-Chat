@@ -1,3 +1,4 @@
+
 debugger
 
 var fetch = function () {
@@ -8,6 +9,9 @@ var fetch = function () {
         success: function (data) {
             console.log(data);
             console.log(data.main.temp)
+            var array = [{name: "Marseille", temp: 18, tempF: 48, hour:10, date:'01/01/2018'}]
+            var dataArray = {data: array};
+            renderArray();
 
 
 
@@ -24,12 +28,50 @@ var fetch = function () {
 $('.searchF').on('click', fetch)
 
 
-var array = [{
+
+var data_array = [{
+    id:1,
     name: 'Marseille', 
     temp: 18, 
     tempF: 48,
     hour:10, 
-    date:'01/01/2018'}]
+    date:'01/01/2018',
+    comment_array:['good', 'I love it']
+  },
+    {
+    id:2,
+    name: 'Paris', 
+    temp: 18, 
+    tempF: 48,
+    hour:10, 
+    date:'01/01/2018',
+    comment_array:['good', 'I love it']
+    }]
+
+
+var renderArray = function () {
+    //Set date in specific format
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1;
+    var yyyy = today.getFullYear();
+    if (dd < 10) {
+        dd = '0' + dd;
+    }
+
+    if (mm < 10) {
+        mm = '0' + mm;
+    }
+    today = dd + '/' + mm + '/' + yyyy;
+    var source = $('#store-template').html();
+    var template = Handlebars.compile(source);
+    var newHTML = template({data:array}
+
+                // hour: today.getHours()
+);
+
+}
+
 
 
 
